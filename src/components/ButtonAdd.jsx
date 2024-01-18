@@ -5,6 +5,7 @@ import AddCircleIcon from "@mui/icons-material/AddCircle";
 import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
 import BingMap from "./map/BingMap";
+import Formcreate from "./Forms/Formcreate";
 const style = {
   position: "absolute",
   top: "50%",
@@ -39,47 +40,7 @@ const ButtonAdd = () => {
           >
             Shop Location
           </h4>
-          <Box sx={{ mb: "30px" }}>
-            <BingMap height={200} />
-
-            <TextField
-              style={{
-                position: "absolute",
-                top: "120px",
-                left: "40px",
-                backgroundColor: "white",
-              }}
-              label="search for location "
-              id="outlined-size-small"
-              size="small"
-            />
-          </Box>
-
-          <Box
-            sx={{
-              display: "grid",
-              gridTemplateColumns: "31% 31% 31%",
-              columnGap: "20px",
-              mb: "30px",
-              justifyContent: "start",
-            }}
-          >
-            <TextField
-              id="outlined-basic"
-              label="Shop Name"
-              variant="outlined"
-            />
-            <TextField
-              id="outlined-basic"
-              label="Phone Number"
-              variant="outlined"
-            />
-            <TextField
-              id="outlined-basic"
-              label="Shop Code"
-              variant="outlined"
-            />
-          </Box>
+         <Formcreate/>
           <Box
             sx={{
               display: "flex",

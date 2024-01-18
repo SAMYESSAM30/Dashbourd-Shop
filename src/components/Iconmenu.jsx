@@ -3,8 +3,8 @@ import Button from "@mui/material/Button";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import MoreVertIcon from "@mui/icons-material/MoreVert";
-import EditIcon from "@mui/icons-material/Edit";
 import DeleteForeverIcon from "@mui/icons-material/DeleteForever";
+import ButtonEdit from "./ButtomEdit";
 export default function Iconmenu() {
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
@@ -41,15 +41,10 @@ export default function Iconmenu() {
           horizontal: "right",
         }}
       >
-        <MenuItem sx={{ pr: "15px" }} onClick={handleClose}>
-          <EditIcon
-            color="action"
-            sx={{
-              mr: "8px",
-            }}
-          />{" "}
-          Edit
+        <MenuItem sx={{ pr: "15px" }} >
+          <ButtonEdit/>
         </MenuItem>
+       
         <MenuItem sx={{ pr: "15px" }} onClick={handleClose}>
           <DeleteForeverIcon
             color="action"
