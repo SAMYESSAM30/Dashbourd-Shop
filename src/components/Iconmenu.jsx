@@ -4,7 +4,7 @@ import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import MoreVertIcon from "@mui/icons-material/MoreVert";
 import DeleteForeverIcon from "@mui/icons-material/DeleteForever";
-import ButtonEdit from "./ButtomEdit";
+import ButtonEdit from "./button/ButtomEdit";
 export default function Iconmenu() {
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);

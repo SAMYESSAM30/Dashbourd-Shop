@@ -1,6 +1,6 @@
 import { Box, Container } from "@mui/material";
 import "./App.css";
-import ButtonAdd from "./components/ButtonAdd";
+import ButtonAdd from "./components/button/ButtonAdd";
 import BasicTable from "./components/Table/BasicTable";
 import BingMap from "./components/map/BingMap";
 

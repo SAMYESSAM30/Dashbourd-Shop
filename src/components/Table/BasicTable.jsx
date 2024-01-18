@@ -8,10 +8,6 @@ import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
 import Iconmenu from "../Iconmenu";
 
-function createData(name, calories, fat, carbs, protein) {
-  return { name, calories, fat, carbs, protein };
-}
-
 const rows = [
   {
     id: 1,
@@ -55,7 +51,7 @@ const rows = [
   },
 ];
 
-export default function BasicTable() {
+export default function  BasicTable() {
   return (
     <TableContainer component={Paper}>
       <Table sx={{ minWidth: 650 }} aria-label="simple table">
