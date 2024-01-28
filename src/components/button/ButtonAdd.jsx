@@ -1,10 +1,11 @@
 import {Button} from "@mui/material";
-import * as React from "react";
-import Box from "@mui/material/Box";
+
 import AddCircleIcon from "@mui/icons-material/AddCircle";
 import Modal from "@mui/material/Modal";
 import Formcreate from "../Forms/Formcreate";
-
+import { Box, TextField } from '@mui/material'
+import React, { useState } from 'react'
+import BingMap from '../map/BingMap'
 const style = {
   position: "absolute",
   top: "50%",
@@ -20,6 +21,9 @@ const ButtonAdd = () => {
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
 
+  const [name, setName] = useState("");
+  const [phone, setPhone] = useState("");
+  const [code, setCode] = useState("");
  
   return (
     <div>
@@ -41,7 +45,57 @@ const ButtonAdd = () => {
           >
             Shop Location
           </h4>
-         <Formcreate/>
+        
+
+ <div>
+      <Box sx={{ mb: "30px" }}>
+        <BingMap height={200} />
+
+        <TextField
+          style={{
+            position: "absolute",
+            top: "120px",
+            left: "40px",
+            backgroundColor: "white",
+          }}
+          label="search for location "
+          id="outlined-size-small"
+          size="small"
+        />
+      </Box>
+
+      <Box
+        sx={{
+          display: "grid",
+          gridTemplateColumns: "31% 31% 31%",
+          columnGap: "20px",
+          mb: "30px",
+          justifyContent: "start",
+        }}
+      >
+        <TextField
+          id="outlined-basic"
+          label="Shop Name"
+          variant="outlined"
+          onChange={(e) => setName(e.target.value)}
+        />
+        <TextField
+          id="outlined-basic"
+          label="Phone Number"
+          variant="outlined"
+          onChange={(e) => setPhone(e.target.value)}
+        />
+        <TextField
+          id="outlined-basic"
+          label="Shop Code"
+          variant="outlined"
+          onChange={(e) => setCode(e.target.value)}
+        />
+      </Box>
+    
+    </div>
+          
+          
           <Box
             sx={{
               display: "flex",

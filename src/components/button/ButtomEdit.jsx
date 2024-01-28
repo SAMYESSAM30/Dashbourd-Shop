@@ -4,6 +4,7 @@ import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
 import EditIcon from "@mui/icons-material/Edit";
 import Formcreate from "../Forms/Formcreate";
+import Formedit from "../Forms/Formedit";
 
 const style = {
     position: "absolute",
@@ -44,7 +45,7 @@ const ButtonEdit = () => {
                     >
                         Shop Location
                     </h4>
-                    <Formcreate />
+                    <Formedit />
                     <Box
                         sx={{
                             display: "flex",

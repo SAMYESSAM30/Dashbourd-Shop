@@ -2,8 +2,8 @@ import React from "react";
 import BingMapsReact from "bingmaps-react";
 const pushPin = {
   center: {
-    latitude: 30.103906242089888,
-    longitude: 31.374120548902027,
+    latitude: 29.868935581920276,
+    longitude: 31.315995051104945,
   },
 };
 
@@ -16,14 +16,14 @@ export default function BingMap(props) {
         position: "relative",
       }}
       pushPins={pushPins}
-      bingMapsKey="your bing maps API key goes here"
+      bingMapsKey="ArQe3pASc6c-2q5I7Dg0hBVXB72vLcagv4WZ47U1CbSwZn6Kn-bOcIg4SjPXZCcW"
       height={props.height}
       mapOptions={{
         navigationBarMode: "square",
       }}
       width="100%"
       viewOptions={{
-        center: { latitude: 30.103906242089888, longitude: 31.374120548902027 },
+        center: { latitude: 9.868935581920276, longitude: 31.315995051104945 },
         mapTypeId: "grayscale",
       }}
     />
